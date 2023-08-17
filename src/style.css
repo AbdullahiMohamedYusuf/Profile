@@ -1,0 +1,780 @@
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen&family=Source+Code+Pro&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+
+}
+
+
+body {
+    background-color: #333;
+    color: #fff;
+    height: 2000px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1400px;
+    margin: auto;
+    align-items: center;
+    height: 60px;
+    animation: new-item-animation 1s linear forwards;
+    opacity: 0;
+}
+.scroll{
+    background-color: transparent;
+    width: 80px;
+    border: none;
+    box-shadow: none;
+}
+.scroll:active {
+    background-color: transparent;
+    width: 80px;
+    border: none;
+    box-shadow: none;
+}
+
+.logo {
+    font-size: 40px;
+    color: #7289da;
+}
+
+.holder {}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+nav ul {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    font-size: 14px;
+}
+
+li span {
+    color: #7289da;
+    font-family: 'Silkscreen', cursive;
+
+}
+
+
+.center {
+    display: flex;
+    height: 600px;
+    animation: fade-in 1s ease-in forwards;
+    opacity: 0;
+}
+
+.display {
+    width: 1000px;
+    max-width: 1200px;
+    margin: auto;
+    align-items: start;
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+}
+
+img {
+    height: 30px;
+}
+
+.display h5 {
+    color: #7289da;
+    font-family: 'Silkscreen', cursive;
+}
+
+.display h1 {
+    display: flex;
+    flex-direction: column;
+    font-weight: bolder;
+    font-size: 55px;
+}
+
+.display span {
+    color: #99aab5;
+
+}
+
+.display p {
+    font-weight: 100;
+    line-height: 1.2;
+    font-family: 'Open Sans', sans-serif;
+    width: 900px;
+    color: #c9d0d5;
+    font-size: 15px;
+}
+
+.socials {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    font-size: 20px;
+    padding: 20px;
+    top: 120%;
+    gap: 10px;
+    align-items: center;
+}
+
+.socials a {
+    color: #99aab5;
+}
+
+.line {
+    width: 1px;
+    height: 100px;
+    background-color: #99aab5;
+}
+
+.App {
+    padding: 10px;
+}
+
+
+.about {
+    display: flex;
+    flex-direction: column;
+    max-width: 1500px;
+    margin: 70px auto;
+    gap: 20px;
+}
+
+.info {
+    display: flex;
+    gap: 40px;
+    max-width: 1200px;
+    margin: auto;
+    align-items: center;
+}
+
+.info p {
+    width: 700px;
+    line-height: 1.2;
+    font-weight: lighter;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.font {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.font h1 {
+    font-size: 60px;
+}
+
+.font span {
+    color: #7289da;
+    font-family: 'Silkscreen', cursive;
+}
+
+h4 {
+    color: #7289da;
+    font-family: 'Silkscreen', cursive;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.verical {
+    width: 50px;
+    height: 2px;
+    background-color: #000;
+
+}
+
+.skills {
+    text-align: right;
+    /* Right-align text */
+    padding-top: 10px;
+    /* Add top padding */
+    padding-bottom: 10px;
+    /* Add bottom padding */
+    color: white;
+    /* White text color */
+}
+
+.info p span {
+    padding: 8px;
+    height: 10px;
+    width: 10px;
+    background-color: #222;
+    border-radius: 10px;
+    line-height: 1.5;
+}
+
+.skills {
+    width: 100%;
+    /* Full width */
+    /* Grey background */
+    height: 100%;
+    border-radius: 100px;
+    gap: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.html {
+    width: 100%;
+    background-color: #7289da;
+    border-radius: 100px;
+    height: 1px;
+    text-align: start;
+    padding: 1;
+    color: #000;
+    font-weight: bold;
+
+}
+
+.hold {
+    text-align: start;
+    font-size: 10px;
+}
+
+.Python {
+    background-color: orange;
+}
+
+@keyframes wipe-enter {
+    0% {
+        transform: scale(0, .025);
+    }
+
+    50% {
+        transform: scale(1, .025);
+    }
+}
+
+.box {
+    background-color: #222;
+    height: 370px;
+    width: 320px;
+    border-radius: 10px;
+    box-shadow: 3px 10px 10px #111;
+    animation: wipe-enter 1s ease-in both;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px;
+    text-align: center;
+    gap: 10px;
+}
+a {
+    color: #fff
+}
+
+.box p {
+    font-size: 15px;
+}
+
+.view  img{
+    width: 200px;
+    height:auto;
+    border-radius: 10px;
+}
+
+.tools {
+    display: flex;
+    gap: 10px;
+}
+
+.box2 {
+    background-color: #7289da;
+    height: 140px;
+    width: 320px;
+    border-radius: 10px;
+    box-shadow: 3px 10px 10px #99aab5;
+}
+
+@keyframes new-item-animation {
+    from {
+        opacity: 0;
+        transform: translateY(-400px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.projects {
+    display: flex;
+    gap: 30px;
+    max-width: 1200px;
+    margin: auto;
+    justify-content: space-evenly;
+    margin-top: 10px;
+}
+
+/* Green */
+.skill h3 {
+    font-weight: lighter;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    color: #dddada;
+}
+
+.skill {
+    background-color: #565757;
+    padding: 2px 10px 2px 10px;
+    border-radius: 10px;
+    width: fit-content;
+}
+
+.uses {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* Three columns with equal width */
+    gap: 10px;
+    column-gap: 0px;
+}
+
+.title h2 span {
+    color: #7289da;
+    font-family: 'Silkscreen', cursive;
+}
+
+.title {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+/* Original CSS code (above) */
+
+/* Media query for screens smaller than 768px (e.g., mobile devices) */
+@media (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+
+    nav {
+        flex-direction: column;
+        height: auto;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .display h1 {
+        font-size: 28px;
+    }
+
+    .display p {
+        font-size: 14px;
+        width: 100%;
+    }
+
+    .socials {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .info {
+        margin: 40px auto;
+    }
+
+    .info p {
+        width: 100%;
+    }
+
+    .font h1 {
+        font-size: 36px;
+    }
+
+    .projects {
+        margin: 60px auto;
+    }
+
+    .skill h3 {
+        font-size: 12px;
+    }
+
+    .uses {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+.projects h1::after {
+    color: #7289da;
+    content: '.';
+    position: absolute;
+}
+
+.projects span {
+    width: 1200px;
+    height: 1px;
+    background-color: #767575;
+}
+
+.dot {
+    color: #7289da;
+}
+
+.experince {
+    display: flex;
+    flex-direction: row;
+    margin-top: 90px;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+    margin-top: 10%;
+}
+
+.experince h1 {
+    font-size: 50px;
+    font-weight: bolder;
+}
+
+.experince h1 span {
+    font-family: 'Silkscreen', cursive;
+    color: #7289da;
+}
+
+.line2 {
+    width: 70%;
+    height: 2px;
+    background-color: #99aab5;
+    border-radius: 10px;
+}
+
+.card {
+    width: 500px;
+    background-color: #222;
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    box-shadow: 3px 10px 10px #111;
+}
+
+.card p {
+    font-size: 14px;
+    color: #767575;
+}
+
+.information {
+    display: flex;
+    justify-content: space-between;
+}
+
+.information h2 {
+    font-weight: bold;
+}
+
+
+.work {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 70px;
+}
+
+.contain {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px;
+    max-width: 1300px;
+    margin: auto;
+    gap: 20px;
+    justify-content: center;
+    margin-left: 15%;
+    width: 80%;
+}
+
+.icon {
+    font-size: 40px;
+    color: #7289da;
+    width: 30px;
+}
+
+.phone,
+.mail {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.mail h4 {
+    font-size: 10px;
+    color: #888686;
+}
+
+.phone h4 {
+    font-family: 'Courier New', Courier, monospace;
+    color: #888686;
+    font-size: 15px;
+}
+
+.icons {
+    display: flex;
+    flex-direction: row;
+    gap: 70px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    flex: 1;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.form h2 {
+    font-size: 40px;
+    font-weight: bold;
+    color: #7289da;
+}
+
+.form button {
+    border-radius: 10px;
+    background-color: #222;
+    border: none;
+    box-shadow: 2px 3px 30px #333;
+}
+
+.contain input {
+    width: 70%;
+    padding: 10px;
+    background-color: #c9d0d5;
+    border: none;
+    outline: none;
+    color: #111;
+    border-radius: 10px;
+}
+
+.contain textarea {
+    width: 70%;
+    border: none;
+    background-color: #c9d0d5;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.container {
+    margin-top: 20%;
+    background-color: #222;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    padding: 20px;
+    flex-direction: column;
+    text-align: center;
+}
+.contact-info {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contact-info h4 {
+    color: #dddada;
+    font-size: 12px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.form {
+    width: 1009px;
+}
+
+.form p {
+    font-size: 15px;
+    max-width: 600px;
+    color: #888686;
+}
+
+.divide {
+    height: 300px;
+    width: 3px;
+    background-color: grey;
+    border-radius: 10px;
+}
+
+
+@media only screen and (max-width: 1092px) {
+    nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 20px;
+        max-width: 90%;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .center {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .display {
+        max-width: 80%;
+    }
+
+    .info {
+        display: flex;
+        flex-direction: column;
+        max-width: 80%;
+    }
+
+    .uses {
+        display: flex;
+        gap: 10px;
+    }
+
+    .projects {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        /* Two items per row */
+        grid-gap: 50px;
+        column-gap: 30px;
+        align-items: center;
+        max-width: 80%;
+    }
+
+    .project {
+        align-items: center;
+        display: flex;
+        max-width: 80%;
+        gap: 10px;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        font-weight: bolder;
+        width: 80%;
+        margin-bottom: 40px;
+        margin-left: 80px;
+        display: none;
+    }
+
+    .work {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        transform: scale(1.2);
+    }
+
+    .line2 {
+        display: none;
+    }
+
+    .experince {
+        display: flex;
+        align-items: center;
+        max-width: 80%;
+        justify-content: center;
+    }
+
+    .container {
+        width: 120%;
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+
+@media only screen and (max-width: 425px) {
+
+    nav ul {
+        display: flex;
+        gap: 10px;
+        transform: scale(0.9);
+    }
+
+    nav span {
+        display: none;
+    }
+
+    nav button {
+        margin-left: 70px;
+    }
+
+    .center {
+        width: 400px;
+        transform: scale(1);
+    }
+
+    .about {
+        width: 400px;
+        transform: scale(1);
+    }
+
+    .uses {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        /* Three items per row */
+        grid-gap: 25px;
+    }
+
+    .projects {
+        margin-top: 150px;
+        width: 400px;
+        display: flex;
+        flex-direction: column;
+        transform: scale(1);
+    }
+
+    .work {
+        transform: scale(0.7);
+    }
+
+    .experince {
+        width: 500px;
+        margin-top: 100px;
+    }
+
+    .container {
+       width: 100%;
+    }
+
+    .icons {
+        display: flex;
+        flex-direction: row;
+    }
+    .icon {
+        font-size: 20px;
+        color: #dddada;
+    }
+    .icons h4 {
+        border-bottom: 1px solid grey;
+    }
+
+    .form,
+    .divide {
+        display: none;
+    }
+}
